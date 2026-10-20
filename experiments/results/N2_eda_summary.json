@@ -1,0 +1,30 @@
+{
+  "n_sessions": 3121,
+  "n_subjects": 61,
+  "age_min_months": 34.0,
+  "age_max_months": 76.0,
+  "ados_mean": 14.18,
+  "ados_std": 3.65,
+  "severity_dist": {
+    "AUT": 49,
+    "ASD": 10,
+    "NS": 2
+  },
+  "mean_gaze_avail": 0.819,
+  "low_gaze_subjects": 0,
+  "mean_skel_conf": 0.814,
+  "task_dist": {
+    "TT": 1934,
+    "IM": 450,
+    "JA": 413,
+    "None": 319,
+    "25": 2,
+    "256": 1,
+    "257": 1,
+    "258": 1
+  },
+  "condition_dist": {
+    "RET": 1634,
+    "SHT": 1487
+  }
+}

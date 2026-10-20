@@ -1,0 +1,25 @@
+# Figure index
+
+Figures preserved as supplied; not regenerated or independently validated.
+
+- [N4_pca_analysis.png](../experiments/figures/N4_pca_analysis.png)
+- [N4v2_pca_scatter.png](../experiments/figures/N4v2_pca_scatter.png)
+- [N4v2_variance.png](../experiments/figures/N4v2_variance.png)
+- [arch_part1_pipeline.png](../experiments/figures/arch_part1_pipeline.png)
+- [arch_part2_ablation.png](../experiments/figures/arch_part2_ablation.png)
+- [complete_dataset_accuracy.png](../experiments/figures/complete_dataset_accuracy.png)
+- [confusion_matrices.png](../experiments/figures/confusion_matrices.png)
+- [fig1_confusion_matrices.png](../experiments/figures/fig1_confusion_matrices.png)
+- [fig2_per_subject.png](../experiments/figures/fig2_per_subject.png)
+- [fig3_comparison.png](../experiments/figures/fig3_comparison.png)
+- [fig4_ados_analysis.png](../experiments/figures/fig4_ados_analysis.png)
+- [fig5_improvement.png](../experiments/figures/fig5_improvement.png)
+- [fig6_class_analysis.png](../experiments/figures/fig6_class_analysis.png)
+- [fig_ablation.png](../experiments/figures/fig_ablation.png)
+- [fig_ablation_final.png](../experiments/figures/fig_ablation_final.png)
+- [fig_ados_analysis.png](../experiments/figures/fig_ados_analysis.png)
+- [main_results_dashboard.png](../experiments/figures/main_results_dashboard.png)
+- [methodology_architecture.png](../experiments/figures/methodology_architecture.png)
+- [methodology_diagram.png](../experiments/figures/methodology_diagram.png)
+- [neurips_architecture_diagram.png](../experiments/figures/neurips_architecture_diagram.png)
+- [per_subject_accuracy.png](../experiments/figures/per_subject_accuracy.png)

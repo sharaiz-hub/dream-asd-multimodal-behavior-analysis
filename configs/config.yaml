@@ -1,0 +1,86 @@
+# ============================================================
+# DREAM-ASD NeurIPS 2026 — Master Configuration
+# All experiments must reference this file
+# ============================================================
+
+project:
+  name: "DREAM_ASD_CAMGT"
+  seed: 42
+  device: "cuda"
+
+paths:
+  raw_data:        "data/raw"
+  processed:       "data/processed"
+  splits:          "data/splits"
+  checkpoints:     "experiments/checkpoints"
+  results:         "experiments/results"
+  logs:            "experiments/logs"
+  figures:         "experiments/figures"
+
+dataset:
+  n_subjects:      61
+  frame_rate:      25.1
+  n_joints:        10
+  n_skeleton_dims: 3
+  modalities:
+    - "skeleton"
+    - "head_gaze"
+    - "eye_gaze"
+  tasks:
+    - "TT"
+    - "IM"
+    - "JA"
+
+preprocessing:
+  window_size:     128
+  stride:          64
+  test_stride:     128
+  confidence_threshold: 0.3
+  min_valid_frames: 0.6
+  normalize_per_subject: true
+
+labels:
+  targets:
+    - "ados_total"
+    - "ados_communication"
+    - "ados_interaction"
+    - "ados_stereotypy"
+  severity_classes:
+    NS:  0
+    ASD: 1
+    AUT: 2
+
+model:
+  name: "CAMGT"
+  d_model: 64
+  n_heads: 4
+  n_layers: 3
+  dropout: 0.3
+  mc_dropout_samples: 50
+  modality_dropout_prob: 0.3
+
+training:
+  n_epochs: 100
+  batch_size: 32
+  learning_rate: 1.0e-3
+  weight_decay: 1.0e-4
+  patience: 20
+  scheduler: "cosine"
+  loss:
+    regression: "smooth_l1"
+    classification: "cross_entropy"
+    uncertainty_weighting: true
+
+validation:
+  strategy: "LOSO"
+  n_folds: 61
+
+evaluation:
+  metrics:
+    - "mae"
+    - "rmse"
+    - "icc"
+    - "ece"
+    - "clinical_utility"
+    - "macro_f1"
+    - "confusion_matrix"

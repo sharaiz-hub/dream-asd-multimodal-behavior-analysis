@@ -1,0 +1,4 @@
+# Minimal dependencies for the provided src/utils.py only; versions not reconstructed from training environment
+numpy
+PyYAML
+torch
