@@ -1,7 +1,7 @@
 # DREAM Autism Research: Multimodal Behavioral Modeling and Experimental Results
 
-**Repository maintainer:** Sharaiz Shahid  
-**Status:** Research portfolio archive; **not currently end-to-end reproducible**  
+**implementation:** Sharaiz Shahid  
+
 **Use:** Research and educational evaluation only. Not a clinical diagnostic tool.
 
 ## Overview
